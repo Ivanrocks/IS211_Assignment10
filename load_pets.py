@@ -88,8 +88,12 @@ def load_data():
 
 if __name__ == '__main__':
     try:
+        print("Creating Database.............")
         create_database()
+        print("Database created successfully.")
+        print("Loading data into Database............")
         load_data()
+        print("Data Loaded successfully.")
     except Exception as e:
         print("Error: ", e)
 
